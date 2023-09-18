@@ -7,7 +7,6 @@ import { TssCacheProvider } from 'tss-react';
 import { Header } from '@/components';
 
 import '../public/font/stylesheet.css'
-import useStyles from '@/styles/global.styles';
 
 export const metadata: Metadata = {
   title: 'Portfolio',
@@ -16,7 +15,6 @@ export const metadata: Metadata = {
 
 export default function RootLayout(props: { children: any; }) {
   const { children } = props;
-  const { classes } = useStyles()
 
 
   return (
@@ -28,7 +26,14 @@ export default function RootLayout(props: { children: any; }) {
           CacheProvider={TssCacheProvider}
         >
           <ThemeRegistry>
-            <body className={classes.body}>
+            <body style={{
+              margin: 0,
+              padding: 0,
+              overflow: 'hidden',
+              cursor: 'wait',
+              background: 'rgba(39, 67, 54, 1)',
+              color: '#ece7e1'
+            }}>
               <Header />
               {children}
             </body>

@@ -8,7 +8,7 @@ interface MagneticProps {
 export function Magnetic(
   { children }: MagneticProps
 ) {
-  const magnetic = useRef(null);
+  const magnetic = useRef<any>();
 
   useEffect(() => {
     console.log(children)
@@ -30,6 +30,6 @@ export function Magnetic(
   }, [children])
 
   return (
-    React.cloneElement(children, { ref: magnetic })
+    React.cloneElement(children as React.ReactElement<any>, { ref: magnetic })
   )
 }
