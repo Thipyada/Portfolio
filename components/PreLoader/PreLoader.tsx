@@ -55,7 +55,8 @@ export function PreLoader() {
             <motion.path
               variants={curve}
               style={{
-                fill: 'rgba(39, 67, 54, 1)'
+                fill: '#ece7e1',
+                color: 'rgba(39, 67, 54, 1)'
               }}
               initial="initial"
               exit="exit"></motion.path>

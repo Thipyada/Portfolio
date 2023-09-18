@@ -38,7 +38,7 @@ export function Contact() {
               onMouseOver={handleHover}
               onMouseLeave={handleMouseLeave}
             >
-              <Link href='mailto:gsaezhen@uwaterloo.ca' style={{ all: 'unset', cursor: 'pointer' }}>
+              <a href='mailto:gsaezhen@uwaterloo.ca' style={{ all: 'unset', cursor: 'pointer' }}>
                 <Typography
                   variant='body2'
                   style={{
@@ -50,7 +50,7 @@ export function Contact() {
                 >
                   Contact ME
                 </Typography>
-              </Link>
+              </a>
             </RoundedButton>
           </Box>
         </Box>
