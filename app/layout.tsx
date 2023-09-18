@@ -1,5 +1,3 @@
-'use client'
-
 import type { Metadata } from 'next'
 import { NextAppDirEmotionCacheProvider } from "tss-react/next/appDir";
 
