@@ -7,12 +7,17 @@ import { Magnetic } from '..';
 import Box from '@mui/material/Box';
 import useStyles from './RoundedButton.styles';
 
-export function RoundedButton({ children, backgroundColor, ...attributes }) {
+interface Props extends React.HTMLAttributes<HTMLDivElement> {
+  children: React.ReactNode
+  backgroundColor: string
+}
+
+export function RoundedButton({ children, backgroundColor, ...attributes }: Props) {
 
   const { classes } = useStyles()
 
-  const circle = useRef(null);
-  let timeline = useRef(null);
+  const circle = useRef<any>();
+  let timeline = useRef<any>();
   let timeoutId: string | number | NodeJS.Timeout | null | undefined = null;
   useEffect(() => {
     timeline.current = gsap.timeline({ paused: true })

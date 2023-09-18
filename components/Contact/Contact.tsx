@@ -33,10 +33,10 @@ export function Contact() {
             data-scroll-speed={0.1}
           >
             <RoundedButton
+              backgroundColor={isHover ? '#ece7e1' : '#1C1D20'}
               className={classes.button}
               onMouseOver={handleHover}
               onMouseLeave={handleMouseLeave}
-              backgroundColor={isHover ? '#ece7e1' : '#1C1D20'}
             >
               <Link href='mailto:gsaezhen@uwaterloo.ca' style={{ all: 'unset', cursor: 'pointer' }}>
                 <Typography
