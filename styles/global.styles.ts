@@ -1,6 +1,8 @@
+'use client'
+
 import { makeStyles } from 'tss-react/mui'
 
-const useStyles = makeStyles()((theme) => ({
+const useStyles = makeStyles()(() => ({
   body: {
     margin: 0,
     padding: 0,
