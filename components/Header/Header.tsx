@@ -53,7 +53,7 @@ export function Header() {
           <Magnetic>
             <Box className={classes.Li} onMouseOver={() => handleHover('about')} onMouseLeave={() => handleMouseLeave('about')}>
               <Link
-                href='/ThipyadaGigi_Saezheng_Resume.pdf' style={{ all: 'unset', cursor: 'pointer' }}
+                href='/Gigi_s_Resume.pdf' style={{ all: 'unset', cursor: 'pointer' }}
                 target='_blank'
               >
                 <Typography className={classes.Link}>Resume</Typography>

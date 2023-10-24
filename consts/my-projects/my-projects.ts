@@ -7,6 +7,12 @@ export const MY_PROJECTS = [
     type: 'Company Client',
     detail: 'to be announce',
     role: 'Developer',
+    framework: [
+      {
+        name: 'NextJS',
+        id: '01'
+      },
+    ],
     tools: [
       {
         name: 'TypeScript',
@@ -50,6 +56,11 @@ export const MY_PROJECTS = [
     type: 'Company Client',
     detail: 'to be announce',
     role: 'Developer',
+    framework: [
+      {
+        name: 'Bootstrap5',
+      }
+    ],
     tools: [
       {
         name: 'HTML',
@@ -90,6 +101,11 @@ export const MY_PROJECTS = [
     type: 'Company Client',
     detail: 'to be announce',
     role: 'Developer',
+    framework: [
+      {
+        name: 'Bootstrap5',
+      }
+    ],
     tools: [
       {
         name: 'HTML',
@@ -130,6 +146,11 @@ export const MY_PROJECTS = [
     type: 'Personal Project',
     detail: 'to be announce',
     role: 'Developer',
+    framework: [
+      {
+        name: 'ReactJS',
+      }
+    ],
     tools: [
       {
         name: 'JavaScript',
@@ -157,6 +178,11 @@ export const MY_PROJECTS = [
     type: 'Personal Project',
     detail: 'to be announce',
     role: 'Developer',
+    framework: [
+      {
+        name: 'ReactJS',
+      }
+    ],
     tools: [
       {
         name: 'JavaScript',
